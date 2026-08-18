@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Leonardo Maiero | Advocacia Trabalhista Especializada</title>
+    <meta name="description" content="Atendimento humanizado e focado em orientar você sobre rescisão e direitos trabalhistas. Agende sua análise individualizada via WhatsApp.">
+    <meta name="keywords" content="advogado trabalhista, direito do trabalho, rescisão contratual, horas extras, insalubridade, assédio moral, estabilidade trabalhista, Leonardo Maiero">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icone-do-site.png">
+
+    <!-- Google Tag Manager (Colocar no topo do HEAD) -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-XXXXXXX'); // Substitua GTM-XXXXXXX pelo seu ID GTM
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepBlue: '#0a2031',
+                        darkBlueSec: '#1c2e3a',
+                        antiqueGold: '#c8a96b',
+                        antiqueGoldHover: '#b59557',
+                        leatherBronze: '#6d5643',
+                        softCream: '#f7f6f2',
+                        beigeBorder: '#e6e2dc',
+                        beigeAccent: '#d9ccba',
+                        graphite: '#111111',
+                        googleYellow: '#fbbc04',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'gold-glow': '0 0 25px rgba(200, 169, 107, 0.25)',
+                        'gold-subtle': '0 4px 20px rgba(200, 169, 107, 0.12)',
+                        'card-premium': '0 10px 30px rgba(10, 32, 49, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Style Sheet -->
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f7f6f2;
+            color: #111111;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Glassmorphism & Gold Borders */
+        .gold-border-glow {
+            border: 1px solid rgba(200, 169, 107, 0.3);
+            box-shadow: 0 4px 20px rgba(200, 169, 107, 0.08);
+        }
+
+        .gold-border-dark {
+            border: 1px solid rgba(200, 169, 107, 0.2);
+        }
+
+        /* Shimmer animation for primary CTA buttons */
+        .btn-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-shimmer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 70%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.35),
+                transparent
+            );
+            transform: skewX(-20deg);
+            animation: shimmerEffect 3.5s infinite;
+        }
+
+        @keyframes shimmerEffect {
+            0% { left: -100%; }
+            20% { left: 150%; }
+            100% { left: 150%; }
+        }
+
+        /* Pulse animation for WhatsApp floating button */
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .whatsapp-pulse {
+            animation: pulseGlow 2s infinite;
+        }
+
+        /* Connecting glowing line for Dobra 4 (Diferenciais Timeline) */
+        .timeline-line-desktop {
+            position: absolute;
+            top: 40px;
+            left: 12%;
+            right: 12%;
+            height: 3px;
+            background: linear-gradient(90deg, #d9ccba 0%, #c8a96b 50%, #d9ccba 100%);
+            z-index: 1;
+        }
+
+        .timeline-line-desktop::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 30%;
+            background: linear-gradient(90deg, transparent, #ffffff, transparent);
+            animation: lineLightFlow 3s infinite linear;
+        }
+
+        @keyframes lineLightFlow {
+            0% { left: -30%; }
+            100% { left: 100%; }
+        }
+
+        .timeline-line-mobile {
+            position: absolute;
+            top: 40px;
+            bottom: 40px;
+            left: 28px;
+            width: 3px;
+            background: linear-gradient(180deg, #d9ccba 0%, #c8a96b 50%, #d9ccba 100%);
+            z-index: 1;
+        }
+
+        .timeline-line-mobile::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(180deg, transparent, #ffffff, transparent);
+            animation: lineLightFlowMobile 3s infinite linear;
+        }
+
+        @keyframes lineLightFlowMobile {
+            0% { top: -30%; }
+            100% { top: 100%; }
+        }
+
+        /* FAQ Accordion Styling */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 300px;
+            opacity: 1;
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+            color: #c8a96b;
+        }
+
+        /* Subtle hero background grid pattern */
+        .hero-pattern {
+            background-image: radial-gradient(circle at 50% 30%, rgba(200, 169, 107, 0.15) 0%, transparent 60%);
+        }
+    </style>
+</head>
+<body class="bg-softCream text-graphite antialiased selection:bg-antiqueGold selection:text-deepBlue">
+
+    <!-- Google Tag Manager (noscript) (Colocar logo após o BODY) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ==========================================
+         FLOATING WHATSAPP BUTTON (CONVERSION DRIVER)
+         ========================================== -->
+    <div class="fixed bottom-5 right-5 z-[9999] flex items-center group">
+        <!-- Tooltip -->
+        <div class="hidden md:block mr-3 px-4 py-2 bg-deepBlue text-white text-xs font-semibold rounded-full shadow-lg border border-antiqueGold/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+            💬 Fale Conosco Agora
+        </div>
+        <!-- Button -->
+        <a href="https://api.whatsapp.com/send?phone=+5511941120314&text=Olá,%20gostaria%20de%20tirar%20dúvidas%20sobre%20meus%20direitos%20trabalhistas" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           data-track="whatsapp-cta"
+           aria-label="Conversar no WhatsApp com Dr. Leonardo Maiero"
+           class="whatsapp-pulse flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-2xl transition-transform transform hover:scale-105">
+            <svg class="w-8 h-8 md:w-9 md:h-9 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- ==========================================
+         DOBRA 1 — HERO SECTION (PONTO CRÍTICO)
+         ========================================== -->
+    <section class="relative bg-deepBlue text-white pt-8 pb-14 md:pt-10 md:pb-20 overflow-hidden hero-pattern">
+        <!-- Ambient decorative elements -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-antiqueGold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-antiqueGold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Branding Header (Logo Ampliado) -->
+            <div class="flex flex-col items-center justify-center mb-8 md:mb-12">
+                <img src="logo-dobrahero.png" 
+                     alt="Leonardo Maiero - Advogado Trabalhista" 
+                     class="h-44 sm:h-56 md:h-72 lg:h-80 w-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                     loading="eager">
+            </div>
+
+            <!-- Main Headline Content -->
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight md:leading-none">
+                    Precisa de suporte com seus direitos no trabalho? <br class="hidden md:inline"/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-antiqueGold via-[#e5cf9e] to-antiqueGold">
+                        Entenda os próximos passos.
+                    </span>
+                </h1>
+
+                <p class="mt-6 text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+                    Atendimento humanizado e focado em orientar você sobre rescisão e direitos trabalhistas, com a segurança de um acompanhamento próximo e claro.
+                </p>
+
+                <!-- 3 Micro-Diferenciais de Autoridade -->
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto text-left">
+                    <div class="flex items-center gap-3 p-3.5 rounded-xl bg-darkBlueSec/60 border border-antiqueGold/20 backdrop-blur-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-antiqueGold/10 flex items-center justify-center text-antiqueGold">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                        </div>
+                        <span class="text-xs sm:text-sm font-medium text-slate-200">Atendimento 100% Sigiloso</span>
+                    </div>
+
+                    <div class="flex items-center gap-3 p-3.5 rounded-xl bg-darkBlueSec/60 border border-antiqueGold/20 backdrop-blur-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-antiqueGold/10 flex items-center justify-center text-antiqueGold">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <span class="text-xs sm:text-sm font-medium text-slate-200">Análise Individualizada</span>
+                    </div>
+
+                    <div class="flex items-center gap-3 p-3.5 rounded-xl bg-darkBlueSec/60 border border-antiqueGold/20 backdrop-blur-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-antiqueGold/10 flex items-center justify-center text-antiqueGold">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <span class="text-xs sm:text-sm font-medium text-slate-200">Resposta Ágil</span>
+                    </div>
+                </div>
+
+                <!-- Main CTA Hero -->
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="https://api.whatsapp.com/send?phone=+5511941120314&text=Olá,%20gostaria%20de%20tirar%20dúvidas%20sobre%20meus%20direitos%20trabalhistas" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       data-track="whatsapp-cta"
+                       class="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-antiqueGold via-[#d8b87c] to-antiqueGold text-deepBlue font-bold text-base md:text-lg rounded-xl shadow-gold-glow hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                        <svg class="w-6 h-6 fill-current text-deepBlue" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        <span>Conversar no WhatsApp</span>
+                    </a>
+                </div>
+                <p class="mt-3 text-xs text-slate-400 font-light">
+                    🔒 Análise direta via WhatsApp • Resposta rápida e confidencial
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DOBRA 2 — SERVIÇOS (ÁREAS DE ATUAÇÃO)
+         ========================================== -->
+    <section class="py-12 md:py-20 bg-softCream relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span class="text-leatherBronze font-semibold text-xs md:text-sm uppercase tracking-widest">
+                    Especialidade & Soluções
+                </span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-deepBlue mt-2">
+                    Áreas de Orientação Jurídica
+                </h2>
+                <div class="w-16 h-0.5 bg-antiqueGold mx-auto my-4"></div>
+                <p class="text-slate-600 text-base md:text-lg font-light leading-relaxed">
+                    Prestamos suporte consultivo pautado pela transparência, com o objetivo de esclarecer seus direitos e as medidas cabíveis.
+                </p>
+            </div>
+
+            <!-- Cards Grid (3x2 Responsive) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-beigeBorder hover:border-antiqueGold/60 shadow-card-premium hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-softCream border border-antiqueGold/30 flex items-center justify-center text-antiqueGold group-hover:bg-deepBlue group-hover:text-antiqueGold transition-colors duration-300 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deepBlue mb-3 group-hover:text-leatherBronze transition-colors">
+                            Rescisão de Contrato
+                        </h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed font-light">
+                            Análise detalhada de verbas rescisórias para conferir se os valores pagos pela empresa estão de acordo com a legislação.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-beigeBorder hover:border-antiqueGold/60 shadow-card-premium hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-softCream border border-antiqueGold/30 flex items-center justify-center text-antiqueGold group-hover:bg-deepBlue group-hover:text-antiqueGold transition-colors duration-300 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deepBlue mb-3 group-hover:text-leatherBronze transition-colors">
+                            Jornada de Trabalho
+                        </h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed font-light">
+                            Orientação sobre o pagamento correto de horas extras, intervalos de descanso e adicionais noturnos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-beigeBorder hover:border-antiqueGold/60 shadow-card-premium hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-softCream border border-antiqueGold/30 flex items-center justify-center text-antiqueGold group-hover:bg-deepBlue group-hover:text-antiqueGold transition-colors duration-300 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deepBlue mb-3 group-hover:text-leatherBronze transition-colors">
+                            Ambiente e Condições
+                        </h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed font-light">
+                            Suporte jurídico sobre situações de assédio ou condições inadequadas, protegendo a dignidade do trabalhador.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-beigeBorder hover:border-antiqueGold/60 shadow-card-premium hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-softCream border border-antiqueGold/30 flex items-center justify-center text-antiqueGold group-hover:bg-deepBlue group-hover:text-antiqueGold transition-colors duration-300 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deepBlue mb-3 group-hover:text-leatherBronze transition-colors">
+                            Saúde e Estabilidade
+                        </h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed font-light">
+                            Orientações sobre direitos em casos de doenças relacionadas ao trabalho ou acidentes laborais.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-2xl border border-beigeBorder hover:border-antiqueGold/60 shadow-card-premium hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-softCream border border-antiqueGold/30 flex items-center justify-center text-antiqueGold group-hover:bg-deepBlue group-hover:text-antiqueGold transition-colors duration-300 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deepBlue mb-3 group-hover:text-leatherBronze transition-colors">
+                            Adicionais Legais
+                        </h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed font-light">
+                            Avaliação de condições de trabalho que podem exigir pagamentos de adicionais de insalubridade ou periculosidade.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-2xl border border-beigeBorder hover:border-antiqueGold/60 shadow-card-premium hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-softCream border border-antiqueGold/30 flex items-center justify-center text-antiqueGold group-hover:bg-deepBlue group-hover:text-antiqueGold transition-colors duration-300 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deepBlue mb-3 group-hover:text-leatherBronze transition-colors">
+                            Desvio de Função
+                        </h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed font-light">
+                            Suporte para entender seus direitos quando as tarefas exercidas não correspondem àquelas descritas no contrato de trabalho.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Secondary Button -->
+            <div class="mt-14 text-center">
+                <a href="https://api.whatsapp.com/send?phone=+5511941120314&text=Olá,%20gostaria%20de%20tirar%20dúvidas%20sobre%20as%20áreas%20de%20atuação" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   data-track="whatsapp-cta"
+                   class="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-antiqueGold text-deepBlue font-bold text-base rounded-xl hover:bg-antiqueGold hover:text-deepBlue transition-all duration-300 shadow-md">
+                    <span>Tire suas dúvidas sobre um dos serviços</span>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v4h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DOBRA 3 — SOBRE O ESCRITÓRIO
+         ========================================== -->
+    <section class="py-12 md:py-20 bg-deepBlue text-white relative overflow-hidden">
+        <!-- Monogram subtle background watermark -->
+        <img src="LM-sfundo1.png" alt="" class="absolute right-0 top-1/2 -translate-y-1/2 w-96 md:w-[600px] opacity-[0.03] pointer-events-none select-none">
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Column: Portrait Frame -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Gold frame border overlay -->
+                        <div class="absolute -inset-3 rounded-2xl border-2 border-antiqueGold/40 translate-x-2 translate-y-2 pointer-events-none"></div>
+                        
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-antiqueGold/30 bg-darkBlueSec">
+                            <img src="drleonardomaiero.jpg" 
+                                 alt="Dr. Leonardo Maiero - Advogado Trabalhista" 
+                                 class="w-full h-auto object-cover object-top hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Gold Badge Footer on Image -->
+                            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-deepBlue via-deepBlue/90 to-transparent flex items-center justify-between">
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">Dr. Leonardo Maiero</h4>
+                                    <p class="text-xs text-antiqueGold font-medium">Advocacia Trabalhista Especializada</p>
+                                </div>
+                                <img src="LM-sfundo1.png" alt="LM Monograma" class="h-8 w-auto opacity-80">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Authority Copy -->
+                <div class="lg:col-span-7">
+                    <span class="text-antiqueGold font-semibold text-xs md:text-sm uppercase tracking-widest">
+                        Trajetória & Filosofia
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-2 mb-6">
+                        Atuação Profissional e Compromisso
+                    </h2>
+                    <div class="w-16 h-0.5 bg-antiqueGold mb-8"></div>
+
+                    <div class="space-y-6 text-slate-300 text-base md:text-lg font-light leading-relaxed">
+                        <p>
+                            O escritório do <strong class="text-white font-semibold">Dr. Leonardo Maiero</strong> nasceu da vocação para o Direito do Trabalho, com o objetivo de oferecer um suporte jurídico que une o conhecimento técnico à escuta atenta das necessidades de cada cliente. A trajetória é pautada pela dedicação constante ao aprendizado e pelo compromisso com a justiça social no ambiente laboral.
+                        </p>
+                        <p>
+                            Com uma base sólida em Direito e aprofundamento acadêmico em questões trabalhistas, nosso atendimento é focado em traduzir conceitos complexos para uma linguagem simples, assegurando que você compreenda exatamente seus direitos e as medidas que podem ser adotadas. Acreditamos que a advocacia é, acima de tudo, uma forma de prestar auxílio humano com eficiência e transparência.
+                        </p>
+                    </div>
+
+                    <!-- Action Button -->
+                    <div class="mt-10">
+                        <a href="https://api.whatsapp.com/send?phone=+5511941120314&text=Olá,%20gostaria%20de%20conhecer%20mais%20sobre%20o%20atendimento%20do%20Dr.%20Leonardo%20Maiero" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           data-track="whatsapp-cta"
+                           class="btn-shimmer inline-flex items-center justify-center gap-3 px-8 py-4 bg-antiqueGold hover:bg-antiqueGoldHover text-deepBlue font-bold text-base rounded-xl shadow-gold-glow transition-all duration-300">
+                            <span>Conheça nossa forma de trabalhar</span>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v4h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DOBRA 4 — DIFERENCIAIS (PASSO A PASSO / TIMELINE)
+         ========================================== -->
+    <section class="py-12 md:py-20 bg-softCream relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+                <span class="text-leatherBronze font-semibold text-xs md:text-sm uppercase tracking-widest">
+                    Pilares de Excelência
+                </span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-deepBlue mt-2">
+                    Por que contar com nossa orientação
+                </h2>
+                <div class="w-16 h-0.5 bg-antiqueGold mx-auto my-4"></div>
+                <p class="text-slate-600 text-base md:text-lg font-light">
+                    Pilar de sustentação pautado pela ética profissional, proximidade e clareza na comunicação.
+                </p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative">
+                
+                <!-- Desktop Connected Line -->
+                <div class="hidden lg:block timeline-line-desktop"></div>
+
+                <!-- Mobile Connected Line -->
+                <div class="lg:hidden timeline-line-mobile"></div>
+
+                <!-- Grid of 4 Steps -->
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-6 relative z-10">
+                    
+                    <!-- Passo 1 -->
+                    <div class="flex lg:flex-col items-start lg:items-center text-left lg:text-center group">
+                        <div class="w-14 h-14 rounded-full bg-white border-2 border-antiqueGold text-deepBlue font-bold text-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-antiqueGold group-hover:text-deepBlue transition-all duration-300 flex-shrink-0 mr-6 lg:mr-0 lg:mb-6">
+                            1
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-beigeBorder shadow-card-premium w-full">
+                            <h3 class="text-xl font-bold text-deepBlue mb-2">
+                                Atendimento Humanizado e Próximo
+                            </h3>
+                            <p class="text-slate-600 text-sm font-light leading-relaxed">
+                                Escuta atenta e acolhedora para compreender a sua situação de trabalho de forma individualizada, priorizando o respeito à sua história e às suas necessidades.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Passo 2 -->
+                    <div class="flex lg:flex-col items-start lg:items-center text-left lg:text-center group">
+                        <div class="w-14 h-14 rounded-full bg-white border-2 border-antiqueGold text-deepBlue font-bold text-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-antiqueGold group-hover:text-deepBlue transition-all duration-300 flex-shrink-0 mr-6 lg:mr-0 lg:mb-6">
+                            2
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-beigeBorder shadow-card-premium w-full">
+                            <h3 class="text-xl font-bold text-deepBlue mb-2">
+                                Explicação Simples e Direta
+                            </h3>
+                            <p class="text-slate-600 text-sm font-light leading-relaxed">
+                                Tradução de conceitos complexos do Direito do Trabalho em uma linguagem clara, permitindo que você compreenda perfeitamente cada fase da orientação.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="flex lg:flex-col items-start lg:items-center text-left lg:text-center group">
+                        <div class="w-14 h-14 rounded-full bg-white border-2 border-antiqueGold text-deepBlue font-bold text-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-antiqueGold group-hover:text-deepBlue transition-all duration-300 flex-shrink-0 mr-6 lg:mr-0 lg:mb-6">
+                            3
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-beigeBorder shadow-card-premium w-full">
+                            <h3 class="text-xl font-bold text-deepBlue mb-2">
+                                Rapidez e Agilidade na Resposta
+                            </h3>
+                            <p class="text-slate-600 text-sm font-light leading-relaxed">
+                                Compromisso com a eficiência no atendimento inicial e na organização das informações necessárias para o suporte jurídico.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Passo 4 (HIGHLIGHTED DARK CARD) -->
+                    <div class="flex lg:flex-col items-start lg:items-center text-left lg:text-center group">
+                        <div class="w-14 h-14 rounded-full bg-antiqueGold text-deepBlue font-bold text-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0 mr-6 lg:mr-0 lg:mb-6">
+                            4
+                        </div>
+                        <div class="bg-deepBlue text-white p-6 rounded-2xl border border-antiqueGold/40 shadow-xl w-full relative">
+                            <span class="absolute -top-3 right-4 px-2.5 py-0.5 bg-antiqueGold text-deepBlue font-bold text-[10px] uppercase rounded-full tracking-wider">Destaque</span>
+                            <h3 class="text-xl font-bold text-antiqueGold mb-2">
+                                Segurança e Conformidade Ética
+                            </h3>
+                            <p class="text-slate-300 text-sm font-light leading-relaxed">
+                                Atuação estritamente alinhada às normas da OAB e à legislação vigente, garantindo total sigilo e responsabilidade profissional.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CTA Timeline -->
+            <div class="mt-16 text-center">
+                <a href="https://api.whatsapp.com/send?phone=+5511941120314&text=Olá,%20gostaria%20de%20entender%20como%20funciona%20a%20assessoria%20trabalhista" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   data-track="whatsapp-cta"
+                   class="btn-shimmer inline-flex items-center justify-center gap-3 px-8 py-4 bg-deepBlue hover:bg-darkBlueSec text-antiqueGold font-bold text-base rounded-xl border border-antiqueGold/40 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <span>Conheça nossa assessoria trabalhista</span>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v4h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DOBRA 5 — PROVA SOCIAL (GOOGLE REVIEWS)
+         ========================================== -->
+    <section class="py-12 md:py-20 bg-[#e6e2dc]/60 relative border-y border-beigeBorder">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header & Google Rating Badge -->
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                
+                <!-- Google Badge Top -->
+                <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white shadow-md border border-beigeBorder mb-6">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24">
+                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                    </svg>
+                    <span class="text-sm font-semibold text-graphite">
+                        Classificação 5.0 <span class="text-googleYellow">★★★★★</span> no Google Avaliações
+                    </span>
+                </div>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-deepBlue">
+                    Reconhecimento e Credibilidade no Atendimento
+                </h2>
+                <div class="w-16 h-0.5 bg-antiqueGold mx-auto my-4"></div>
+                <p class="text-slate-600 text-base md:text-lg font-light">
+                    Avaliações reais de clientes atendidos com dedicação e ética.
+                </p>
+            </div>
+
+            <!-- Review Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review Card 1 (Malu) -->
+                <a href="https://share.google/7Q852WGb8JUPyvLEG" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="bg-white p-7 rounded-2xl border border-beigeBorder shadow-card-premium hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <!-- User header -->
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-full bg-purple-600 text-white font-bold text-lg flex items-center justify-center">
+                                    M
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-graphite text-base group-hover:text-leatherBronze transition-colors">Malu</h3>
+                                    <p class="text-xs text-slate-400">1 avaliação</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 opacity-60" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                        </div>
+                        
+                        <!-- Stars & Timestamp -->
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-googleYellow text-sm">★★★★★</span>
+                            <span class="text-xs text-slate-400">2 meses atrás</span>
+                        </div>
+
+                        <!-- Content -->
+                        <p class="text-slate-700 text-sm font-light leading-relaxed italic">
+                            "Excelente profissional! Prestou um atendimento extremamente atencioso, esclareceu todas as minhas dúvidas com clareza e demonstrou grande conhecimento durante todo o processo. Sempre disponível para orientar e acompanhar cada etapa com transparência e responsabilidade. Recomendo seus serviços para quem procura um advogado competente, ético e comprometido com os interesses dos clientes. Muito obrigado pelo excelente trabalho!"
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Review Card 2 (Gabriee271199 Souza) -->
+                <a href="https://share.google/7Q852WGb8JUPyvLEG" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="bg-white p-7 rounded-2xl border border-beigeBorder shadow-card-premium hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <!-- User header -->
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center">
+                                    G
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-graphite text-base group-hover:text-leatherBronze transition-colors">Gabriee271199 Souza</h3>
+                                    <p class="text-xs text-slate-400">3 avaliações • 1 foto</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 opacity-60" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                        </div>
+                        
+                        <!-- Stars & Timestamp -->
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-googleYellow text-sm">★★★★★</span>
+                            <span class="text-xs text-slate-400">2 meses atrás</span>
+                        </div>
+
+                        <!-- Content -->
+                        <p class="text-slate-700 text-sm font-light leading-relaxed italic">
+                            "Tive uma excelente experiência com o Dr. Leonardo Maiero. Sempre muito atencioso, claro nas orientações e ágil na condução das demandas trabalhistas. Demonstra profundo conhecimento técnico, comprometimento e segurança em cada atendimento. Recomendo seu trabalho pela seriedade, profissionalismo e dedicação aos clientes."
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Review Card 3 (Maysa Cavalcante) -->
+                <a href="https://share.google/7Q852WGb8JUPyvLEG" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="bg-white p-7 rounded-2xl border border-beigeBorder shadow-card-premium hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <!-- User header -->
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-full bg-orange-500 text-white font-bold text-lg flex items-center justify-center">
+                                    M
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-graphite text-base group-hover:text-leatherBronze transition-colors">Maysa Cavalcante</h3>
+                                    <p class="text-xs text-slate-400">1 avaliação</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 opacity-60" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                        </div>
+                        
+                        <!-- Stars & Timestamp -->
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-googleYellow text-sm">★★★★★</span>
+                            <span class="text-xs text-slate-400">2 meses atrás</span>
+                        </div>
+
+                        <!-- Content -->
+                        <p class="text-slate-700 text-sm font-light leading-relaxed italic">
+                            "Sou muito grata pelo atendimento e pelo trabalho realizado do Dr. Leonardo. Um profissional ético, responsável e extremamente competente. Recomendo de olhos fechados 🙏🏼"
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DOBRA 6 — FAQ (ACORDEÃO INTERATIVO)
+         ========================================== -->
+    <section class="py-12 md:py-20 bg-deepBlue text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span class="text-antiqueGold font-semibold text-xs md:text-sm uppercase tracking-widest">
+                    Tire Suas Dúvidas
+                </span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-2">
+                    Esclarecendo suas dúvidas sobre o suporte jurídico
+                </h2>
+                <div class="w-16 h-0.5 bg-antiqueGold mx-auto my-4"></div>
+                <p class="text-slate-300 text-base md:text-lg font-light">
+                    Informações objetivas para orientar você em questões trabalhistas fundamentais.
+                </p>
+            </div>
+
+            <!-- Accordion List -->
+            <div class="space-y-4" id="faq-accordion">
+                
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item bg-darkBlueSec/90 rounded-2xl border border-antiqueGold/20 overflow-hidden transition-all duration-300">
+                    <button class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base sm:text-lg font-semibold text-white">Como funciona a primeira orientação jurídica?</span>
+                        <svg class="accordion-icon w-6 h-6 text-antiqueGold transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+                            O atendimento inicial é voltado para ouvir sua situação e analisar as informações disponíveis, permitindo que você entenda seus direitos e as medidas que podem ser adotadas em seu caso.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item bg-darkBlueSec/90 rounded-2xl border border-antiqueGold/20 overflow-hidden transition-all duration-300">
+                    <button class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base sm:text-lg font-semibold text-white">Quais documentos são necessários para analisar meu caso?</span>
+                        <svg class="accordion-icon w-6 h-6 text-antiqueGold transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+                            Geralmente, documentos como o termo de rescisão de contrato, holerites, registros de ponto e comunicações formais são fundamentais para uma análise inicial assertiva.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item bg-darkBlueSec/90 rounded-2xl border border-antiqueGold/20 overflow-hidden transition-all duration-300">
+                    <button class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base sm:text-lg font-semibold text-white">Quanto tempo pode durar um processo trabalhista?</span>
+                        <svg class="accordion-icon w-6 h-6 text-antiqueGold transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+                            Cada situação possui particularidades e o tempo de resolução varia conforme o caso e o andamento processual, sendo impossível prever resultados ou prazos exatos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item bg-darkBlueSec/90 rounded-2xl border border-antiqueGold/20 overflow-hidden transition-all duration-300">
+                    <button class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base sm:text-lg font-semibold text-white">Existe garantia de resultado em uma ação trabalhista?</span>
+                        <svg class="accordion-icon w-6 h-6 text-antiqueGold transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+                            A advocacia é uma atividade de meio e não de resultado. Por questões éticas e legais, não é possível prometer resultados específicos, visto que cada decisão depende da análise do Poder Judiciário.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item bg-darkBlueSec/90 rounded-2xl border border-antiqueGold/20 overflow-hidden transition-all duration-300">
+                    <button class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base sm:text-lg font-semibold text-white">Posso buscar orientação mesmo se ainda estiver trabalhando?</span>
+                        <svg class="accordion-icon w-6 h-6 text-antiqueGold transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+                            Sim. É possível obter orientação consultiva para entender se a situação atual de trabalho está em conformidade com as leis vigentes ou se há direitos a serem preservados.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item bg-darkBlueSec/90 rounded-2xl border border-antiqueGold/20 overflow-hidden transition-all duration-300">
+                    <button class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base sm:text-lg font-semibold text-white">Como garantir a confidencialidade das minhas informações?</span>
+                        <svg class="accordion-icon w-6 h-6 text-antiqueGold transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+                            O sigilo profissional é um dever fundamental do advogado, garantindo que todas as informações compartilhadas durante nosso atendimento sejam tratadas com absoluta discrição e proteção.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FAQ CTA -->
+            <div class="mt-14 text-center">
+                <a href="https://api.whatsapp.com/send?phone=+5511941120314&text=Olá,%20ainda%20tenho%20dúvidas%20e%20gostaria%20de%20falar%20com%20o%20Dr.%20Leonardo%20Maiero" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   data-track="whatsapp-cta"
+                   class="btn-shimmer inline-flex items-center justify-center gap-3 px-8 py-4 bg-antiqueGold hover:bg-antiqueGoldHover text-deepBlue font-bold text-base rounded-xl shadow-gold-glow transition-all duration-300">
+                    <span>Ainda tem dúvidas? Entre em contato conosco.</span>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v4h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DOBRA 7 — CONTATO, LOCALIZAÇÃO & FOOTER
+         ========================================== -->
+    <section class="py-12 md:py-20 bg-deepBlue text-white border-t border-antiqueGold/20 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span class="text-antiqueGold font-semibold text-xs md:text-sm uppercase tracking-widest">
+                    Atendimento Direto
+                </span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-2">
+                    Canais de Atendimento
+                </h2>
+                <div class="w-16 h-0.5 bg-antiqueGold mx-auto my-4"></div>
+                <p class="text-slate-300 text-base md:text-lg font-light">
+                    Entre em contato com nossa equipe para obter orientação jurídica clara, ética e transparente.
+                </p>
+            </div>
+
+            <!-- Contact Cards List (Vertical Stack) -->
+            <div class="flex flex-col gap-4 max-w-2xl mx-auto mb-16">
+                
+                <!-- WhatsApp Item -->
+                <a href="https://api.whatsapp.com/send?phone=+5511941120314&text=Olá,%20vim%20pelo%20Google%20e%20gostaria%20de%20falar%20com%20um%20profissional%20em%20Direito%20do%20Trabalho" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   data-track="whatsapp-cta"
+                   class="bg-darkBlueSec p-5 sm:p-6 rounded-2xl border border-antiqueGold/30 hover:border-antiqueGold hover:shadow-gold-subtle transition-all duration-300 flex items-center justify-between group">
+                    <div class="flex items-center gap-4 sm:gap-5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-antiqueGold/10 flex items-center justify-center text-antiqueGold group-hover:scale-110 group-hover:bg-antiqueGold group-hover:text-deepBlue transition-all flex-shrink-0">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 24 24">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xs uppercase tracking-wider text-slate-400 font-medium">WhatsApp</h3>
+                            <p class="text-base sm:text-lg font-bold text-white group-hover:text-antiqueGold transition-colors">+55 11 94112-0314</p>
+                        </div>
+                    </div>
+                    <div class="text-antiqueGold opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+                <!-- Email Item -->
+                <a href="mailto:leonardomaiero.adv@gmail.com" 
+                   class="bg-darkBlueSec p-5 sm:p-6 rounded-2xl border border-antiqueGold/30 hover:border-antiqueGold hover:shadow-gold-subtle transition-all duration-300 flex items-center justify-between group">
+                    <div class="flex items-center gap-4 sm:gap-5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-antiqueGold/10 flex items-center justify-center text-antiqueGold group-hover:scale-110 group-hover:bg-antiqueGold group-hover:text-deepBlue transition-all flex-shrink-0">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xs uppercase tracking-wider text-slate-400 font-medium">E-mail</h3>
+                            <p class="text-sm sm:text-base font-bold text-white group-hover:text-antiqueGold transition-colors break-all">leonardomaiero.adv@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="text-antiqueGold opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+                <!-- Instagram Item -->
+                <a href="https://instagram.com/leonardomaiero.adv" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="bg-darkBlueSec p-5 sm:p-6 rounded-2xl border border-antiqueGold/30 hover:border-antiqueGold hover:shadow-gold-subtle transition-all duration-300 flex items-center justify-between group">
+                    <div class="flex items-center gap-4 sm:gap-5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-antiqueGold/10 flex items-center justify-center text-antiqueGold group-hover:scale-110 group-hover:bg-antiqueGold group-hover:text-deepBlue transition-all flex-shrink-0">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.5 6.5h.01M7.8 2h8.4C19.4 2 21 3.6 21 6.8v10.4c0 3.2-1.6 4.8-4.8 4.8H7.8C4.6 22 3 20.4 3 17.2V6.8C3 3.6 4.6 2 7.8 2z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xs uppercase tracking-wider text-slate-400 font-medium">Instagram</h3>
+                            <p class="text-base sm:text-lg font-bold text-white group-hover:text-antiqueGold transition-colors">@leonardomaiero.adv</p>
+                        </div>
+                    </div>
+                    <div class="text-antiqueGold opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+                <!-- Location Item -->
+                <a href="https://maps.google.com/?q=Rua+Huaimi,+18+-+Vila+Suiça" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="bg-darkBlueSec p-5 sm:p-6 rounded-2xl border border-antiqueGold/30 hover:border-antiqueGold hover:shadow-gold-subtle transition-all duration-300 flex items-center justify-between group">
+                    <div class="flex items-center gap-4 sm:gap-5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-antiqueGold/10 flex items-center justify-center text-antiqueGold group-hover:scale-110 group-hover:bg-antiqueGold group-hover:text-deepBlue transition-all flex-shrink-0">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xs uppercase tracking-wider text-slate-400 font-medium">Localização</h3>
+                            <p class="text-sm sm:text-base font-bold text-white group-hover:text-antiqueGold transition-colors">Rua Huaimi, 18 - Vila Suíça</p>
+                        </div>
+                    </div>
+                    <div class="text-antiqueGold opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Styled Embedded Map Mockup / Iframe -->
+            <div class="rounded-2xl overflow-hidden border border-antiqueGold/30 shadow-2xl bg-darkBlueSec h-80 relative">
+                <iframe 
+                    title="Endereço do Escritório Dr. Leonardo Maiero"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.4984242691523!2d-46.52044892375836!3d-23.658097965103444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42d99d1fa98d%3A0x6b806141c2c31e9c!2sRua%20Huaimi%2C%2018%20-%20Vila%20Sui%C3%A7a%2C%20Santo%20Andr%C3%A9%20-%20SP!5e0!3m2!1spt-BR!2sBR!4v1700000000000!5m2!1spt-BR!2sBR" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; filter: contrast(1.1) opacity(0.9);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Minimal Footer -->
+            <div class="mt-16 pt-8 border-t border-slate-800 text-center flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>© 2026 Leonardo Maiero - Advocacia Trabalhista. Todos os direitos reservados.</p>
+                
+                <button onclick="openModal()" class="text-antiqueGold hover:underline hover:text-white transition-colors focus:outline-none">
+                    Políticas de Privacidade e Termos de Uso
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         MODAL OVERLAY (POLÍTICAS DE PRIVACIDADE & LGPD)
+         ========================================== -->
+    <div id="privacy-modal" class="fixed inset-0 z-[10000] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-deepBlue border border-antiqueGold/40 text-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-10 shadow-2xl relative">
+            
+            <!-- Top Return Button -->
+            <div class="flex items-center justify-between border-b border-antiqueGold/20 pb-4 mb-6">
+                <h3 class="text-xl md:text-2xl font-bold text-antiqueGold">Políticas de Privacidade e Termos de Uso</h3>
+                <button onclick="closeModal()" class="inline-flex items-center gap-2 px-4 py-2 bg-antiqueGold text-deepBlue font-bold rounded-lg hover:bg-antiqueGoldHover text-xs md:text-sm transition-colors">
+                    ← Voltar à página principal
+                </button>
+            </div>
+
+            <!-- Legal Copy Content -->
+            <div class="space-y-4 text-slate-300 text-xs md:text-sm font-light leading-relaxed">
+                <h4 class="text-base font-bold text-white">1. Termos de Uso</h4>
+                <p>
+                    Este site tem caráter exclusivamente informativo e institucional, conforme estabelecido pelo Código de Ética e Disciplina da Ordem dos Advogados do Brasil (OAB). O conteúdo publicado neste canal não constitui consulta jurídica formal, parecer técnico ou promessa de resultado.
+                </p>
+
+                <h4 class="text-base font-bold text-white">2. Privacidade e Proteção de Dados (LGPD)</h4>
+                <p>
+                    Em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), informamos que o atendimento prestado via WhatsApp resguarda o sigilo das informações trocadas entre o usuário e o advogado. Não compartilhamos, vendemos ou comercializamos dados pessoais a terceiros.
+                </p>
+
+                <h4 class="text-base font-bold text-white">3. Cookies e Rastreamento</h4>
+                <p>
+                    Utilizamos ferramentas de análise estatística como Google Tag Manager e Google Analytics unicamente para quantificar o tráfego e otimizar a experiência de navegação do usuário.
+                </p>
+
+                <h4 class="text-base font-bold text-white">4. Limitação de Responsabilidade</h4>
+                <p>
+                    A advocacia é uma atividade de meio e não de resultado. Quaisquer informações prévias fornecidas durante o contato telefônico ou por mensagem possuem caráter preliminar.
+                </p>
+            </div>
+
+            <!-- Bottom Return Button -->
+            <div class="mt-8 pt-4 border-t border-antiqueGold/20 flex justify-end">
+                <button onclick="closeModal()" class="inline-flex items-center gap-2 px-6 py-3 bg-antiqueGold text-deepBlue font-bold rounded-xl hover:bg-antiqueGoldHover text-sm transition-colors">
+                    ← Voltar à página principal
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Pure JavaScript logic -->
+    <script>
+        // FAQ Accordion Functionality
+        function toggleFaq(buttonElement) {
+            const item = buttonElement.parentElement;
+            const accordion = document.getElementById('faq-accordion');
+            const items = accordion.querySelectorAll('.accordion-item');
+
+            items.forEach(i => {
+                if (i !== item) {
+                    i.classList.remove('active');
+                }
+            });
+
+            item.classList.toggle('active');
+        }
+
+        // LGPD Modal Logic
+        function openModal() {
+            const modal = document.getElementById('privacy-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('privacy-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when pressing ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // GTM Tracking Click Handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButtons = document.querySelectorAll('[data-track="whatsapp-cta"]');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    if (window.dataLayer) {
+                        window.dataLayer.push({
+                            'event': 'whatsapp_click',
+                            'cta_location': this.getAttribute('href')
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
